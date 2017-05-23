@@ -7,7 +7,6 @@ const compile = require('./lib/compile');
 const wpwatch = require('./lib/wpwatch');
 const cleanup = require('./lib/cleanup');
 const run = require('./lib/run');
-const serve = require('./lib/serve');
 const packExternalModules = require('./lib/packExternalModules');
 
 class ServerlessWebpack {
@@ -22,7 +21,6 @@ class ServerlessWebpack {
       wpwatch,
       cleanup,
       run,
-      serve,
       packExternalModules
     );
 
@@ -74,18 +72,6 @@ class ServerlessWebpack {
               },
             },
           },
-          serve: {
-            usage: 'Simulate the API Gateway and serves lambdas locally',
-            lifecycleEvents: [
-              'serve',
-            ],
-            options: {
-              port: {
-                usage: 'The local server port',
-                shortcut: 'p',
-              },
-            },
-          },
         },
       },
     };
@@ -120,10 +106,6 @@ class ServerlessWebpack {
       'webpack:watch:watch': () => BbPromise.bind(this)
         .then(this.validate)
         .then(this.watch),
-
-      'webpack:serve:serve': () => BbPromise.bind(this)
-        .then(this.validate)
-        .then(this.serve),
 
       'before:offline:start:init': () => BbPromise.bind(this)
         .then(this.validate)
