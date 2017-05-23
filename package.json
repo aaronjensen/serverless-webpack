@@ -1,28 +1,21 @@
 {
-  "name": "serverless-webpack",
-  "version": "1.0.0-rc.4",
+  "name": "sls-webpack",
+  "version": "1.0.0",
   "description": "Serverless plugin to bundle your javascript with Webpack",
   "main": "index.js",
-  "author": "Nicola Peduzzi <nicola.peduzzi@elastic-coders.com> (http://elastic-coders.com)",
+  "author": "Steven Inskip",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elastic-coders/serverless-webpack.git"
+    "url": "git+https://github.com/SkippyZA/sls-webpack.git"
   },
   "keywords": [
-    "serverless",
-    "1.0",
-    "webpack",
-    "babel",
-    "typescript",
-    "es6",
-    "plugin",
-    "runtime"
+    "serverless", "1.0", "webpack", "babel", "typescript", "es6", "plugin", "runtime"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/elastic-coders/serverless-webpack/issues"
+    "url": "https://github.com/SkippyZA/sls-webpack/issues"
   },
-  "homepage": "https://github.com/elastic-coders/serverless-webpack#readme",
+  "homepage": "https://github.com/SkippyZA/sls-webpack#readme",
   "scripts": {
     "test": "istanbul cover _mocha tests/all -- -R spec --recursive"
   },
@@ -37,7 +30,7 @@
     "istanbul": "^0.4.4",
     "mocha": "^3.0.2",
     "mockery": "^1.7.0",
-    "serverless": "^1.0.0-beta.2",
+    "serverless": "^1.13.2",
     "sinon": "^1.17.5",
     "sinon-chai": "^2.8.0"
   },
