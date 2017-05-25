@@ -1,5 +1,5 @@
 {
-  "name": "@aaronjensen/serverless-webpack",
+  "name": "@substantial/serverless-webpack",
   "version": "1.0.0-rc.4.1",
   "description": "Serverless plugin to bundle your javascript with Webpack",
   "main": "index.js",
